@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Task List Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Task List Manager is a web-based application built using React and Material-UI (MUI) that allows users to efficiently manage their tasks. This application provides functionality for creating, editing, deleting, and organizing tasks. It features a visually appealing user interface and is optimized for responsiveness and usability.
 
-## Available Scripts
+## Features:
+- Task Management: Add, edit, and delete tasks.
+- Status Updates: Update task statuses (To Do, In Progress, Done) directly in the table.
+- Real-Time Editing: Editable fields for task titles and descriptions.
+- User-Friendly UI: Clean and responsive interface built with Material-UI.
+- Delete Action: Quick task removal with a single click.
 
-In the project directory, you can run:
+## Demo:
 
-### `npm start`
+Check out the live demo of the project here: [Task List Manager](https://675ecd57315992721e7b5484--taskmanagerlive.netlify.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation:
+      ```bash
+       git clone https://github.com/sreyangshu05/Task_List_Manager.git
+       cd Task_List_Manager
+       npm install
+       npm start
+## Usage:
+- Click on the "Add Task" button (to be implemented) to add a new task.
+- Provide task details such as title and description.
+- Double-click on a cell in the "Title" or "Description" column to edit its contents.
+- Use the dropdown in the "Status" column to update a task's progress (To Do, In Progress, Done).
+- Click the "Delete" button in the "Actions" column to remove a task.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used:
+- React: Frontend library for building user interfaces.
+- Material-UI (MUI): Component library for responsive and visually appealing UI design.
+- JavaScript (ES6+): Core programming language.
+- CSS: Custom styles to enhance visual appearance.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgments:
+Special thanks to the Material-UI team for their excellent UI components and React community for their continuous support.
