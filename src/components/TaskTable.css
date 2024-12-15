@@ -1,0 +1,154 @@
+/* General styling for the Task Table component */
+.TaskTableContainer {
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    background-color: #1e1e2f; /* Dark background */
+    border-radius: 12px; /* Smooth, rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); /* Subtle shadow for depth */
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif; /* Clean, modern font */
+    transition: all 0.3s ease-in-out; /* Smooth transition for theme switch */
+    color: #e0e0e0; /* Default text color */
+}
+
+/* Light and Dark Mode Themes */
+body[data-theme='dark'] {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body[data-theme='light'] {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* DataGrid Styling */
+.MuiDataGrid-root {
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+/* DataGrid Header Styling */
+.MuiDataGrid-columnHeaders {
+    /* background-color: #2a2a40; */
+    /* color: #ffffff; */
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 2px solid #ff5722;
+}
+
+/* DataGrid Rows Styling */
+.MuiDataGrid-row {
+    /* background-color: #2a2a40; */
+    color: #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+.MuiDataGrid-row:hover {
+    background-color: rgba(255, 87, 34, 0.2); /* Highlighted row */
+}
+
+/* Rows Per Page Styling */
+.MuiDataGrid-footerContainer {
+    background-color: #ffffff; /* Row per page color */
+    color: #000000;
+}
+
+/* Cell Editing Styling */
+.MuiDataGrid-cell--editing {
+    background-color: #ff5722;
+    color: #ffffff;
+}
+
+/* Button Styling */
+.MuiButton-outlined {
+    color: #ff5722;
+    border-color: #ff5722;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.MuiButton-outlined:hover {
+    background-color: #ff5722;
+    color: #ffffff;
+    border-color: #ff5722;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .TaskTableContainer {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .MuiDataGrid-root {
+        font-size: 14px;
+    }
+
+    .MuiDataGrid-columnHeaders {
+        font-size: 16px;
+    }
+
+    .MuiDataGrid-row {
+        font-size: 14px;
+    }
+
+    .MuiButton-outlined {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+/* Centered Box Styling */
+.Box-root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    background-color: #2a2a40;
+}
+
+/* Transition Effects */
+.MuiDataGrid-cell {
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+    background-color: #ff5722;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+    background-color: #1e88e5;
+    color: #e0e0e0;
+}
+
+/* Scrollbar Styling */
+.TaskTableContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+.TaskTableContainer::-webkit-scrollbar-thumb {
+    background-color: #1e88e5;
+    border-radius: 10px;
+}
+
+.TaskTableContainer::-webkit-scrollbar-track {
+    background-color: #2a2a40;
+}

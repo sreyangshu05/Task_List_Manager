@@ -1,0 +1,187 @@
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+
+/* Container */
+.MuiContainer-root {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+/* Title */
+.MuiTypography-h4 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 10px;
+}
+
+/* Button Styles */
+.MuiButton-root {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 20px;
+  background-color: #4caf50;
+  color: #121212;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.MuiButton-root:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.MuiButton-root:focus {
+  outline: none;
+}
+
+/* Toast Notifications */
+.Toastify__toast-container {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Task Table Styling */
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+.task-table th,
+.task-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+.task-table th {
+  background-color: #333;
+  color: #ffffff;
+}
+
+.task-table td {
+  background-color: #1e1e1e;
+  color: #cfcfcf;
+}
+
+.task-table tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+.task-table td .action-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.action-buttons button {
+  background-color: #ffcc00;
+  color: #121212;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action-buttons button:hover {
+  background-color: #ff9900;
+  transform: scale(1.1);
+}
+
+/* Add Task Form */
+.add-task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.add-task-form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  font-size: 1rem;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.add-task-form input:focus {
+  outline: none;
+  border-color: #4caf50;
+  background-color: #333;
+}
+
+.add-task-form button {
+  font-size: 1rem;
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: #121212;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-task-form button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .MuiContainer-root {
+    padding: 20px;
+  }
+
+  .MuiTypography-h4 {
+    font-size: 2rem;
+  }
+
+  .task-table td,
+  .task-table th {
+    padding: 10px;
+  }
+
+  .add-task-form input,
+  .add-task-form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .MuiTypography-h4 {
+    font-size: 1.8rem;
+  }
+
+  .task-table td,
+  .task-table th {
+    padding: 8px;
+  }
+
+  .task-table .action-buttons {
+    justify-content: space-around;
+  }
+
+  .MuiContainer-root {
+    margin: 20px auto;
+  }
+}

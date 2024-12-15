@@ -1,0 +1,168 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  background-color: white; /* Dark background */
+  color: #e0e0e0; /* Light text for better contrast */
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Theme */
+body[data-theme='light'] {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Form Container */
+form {
+  background-color: #1e1e1e; /* Subtle black shade */
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Deeper shadow for modern depth */
+  max-width: 600px;
+  margin: 0 auto;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body[data-theme='light'] form {
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Fields */
+.MuiTextField-root {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Label Styles */
+.MuiInputLabel-root {
+  color: #b0b0b0; /* Neutral gray */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+body[data-theme='light'] .MuiInputLabel-root {
+  color: #666;
+}
+
+/* TextField Styles */
+.MuiOutlinedInput-root {
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #444; /* Subtle border for contrast */
+  color: #e0e0e0;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* .MuiOutlinedInput-root.Mui-focused {
+  background-color: #333;
+  border-color: #ff4081; 
+} */
+
+body[data-theme='light'] .MuiOutlinedInput-root {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+}
+
+/* Button Styles */
+.MuiButton-root {
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #121212;
+  background-color: #ff4081; /* Vibrant pink accent */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 6px 14px rgba(255, 64, 129, 0.4); /* Softer shadow */
+}
+
+.MuiButton-root:hover {
+  background-color: #e0336c; /* Slightly darker pink */
+  transform: scale(1.03);
+}
+
+body[data-theme='light'] .MuiButton-root {
+  background-color: #4caf50; /* Green for light mode */
+  color: white;
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff4081;
+  color: #121212;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 6px 14px rgba(255, 64, 129, 0.4);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  background-color: #e0336c;
+  transform: scale(1.1);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  form {
+    padding: 30px;
+  }
+
+  .MuiButton-root {
+    font-size: 14px;
+    padding: 12px 18px;
+  }
+
+  .theme-toggle-btn {
+    bottom: 15px;
+    right: 15px;
+    padding: 12px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    padding: 20px;
+  }
+
+  .MuiButton-root {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+
+  .theme-toggle-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+/* Scrollbar Styles */
+form::-webkit-scrollbar {
+  width: 8px;
+}
+
+form::-webkit-scrollbar-thumb {
+  background-color: #ff4081; /* Accent color */
+  border-radius: 10px;
+}
+
+form::-webkit-scrollbar-track {
+  background-color: #2c2c2c;
+}
